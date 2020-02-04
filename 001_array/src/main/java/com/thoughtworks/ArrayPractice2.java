@@ -7,8 +7,13 @@ public class ArrayPractice2 {
      */
     public static int[] exchange() {
         int[] array = new int[]{10, 8, 1, 7, 0, 20, 16, 19};
-
-
-        return null;
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > array[0]) {
+                int temp = array[0];
+                array[0] = array[i];
+                array[i] = temp;
+            }
+        }
+        return array;
     }
 }
