@@ -1,6 +1,5 @@
 package com.thoughtworks;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class ArrayPractice1 {
