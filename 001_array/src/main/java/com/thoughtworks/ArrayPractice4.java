@@ -9,15 +9,8 @@ public class ArrayPractice4 {
      */
     public static int[] insert(int number) {
         int[] array = new int[]{1, 20, 50, 100};
-        int[] tempArr = new int[array.length + 1];
-        for (int i = 0, j = 0; i < tempArr.length; i++) {
-            if (i == tempArr.length -1) {
-                tempArr[i] = number;
-            } else {
-                tempArr[i] = array[j];
-                j++;
-            }
-        }
+        int[] tempArr = Arrays.copyOf(array, array.length + 1);
+        tempArr[array.length] = number;
         Arrays.sort(tempArr);
         return tempArr;
     }
