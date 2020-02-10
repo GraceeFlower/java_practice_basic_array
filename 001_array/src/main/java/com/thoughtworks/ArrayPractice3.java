@@ -8,8 +8,8 @@ public class ArrayPractice3 {
     public static int[] filterZero(int[] array) {
         int[] newArr;
         int len = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (0 != array[i]) {
+        for (int value : array) {
+            if (0 != value) {
                 len++;
             }
         }
